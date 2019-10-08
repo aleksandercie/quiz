@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 800px;
+  border: 2px solid #1B234E;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 50px auto;
+  color: #1B234E;
+}
+
+.title {
+  position: relative;
+  padding: 20px;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.question {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.questionBox {
+  position: relative;
+  border: 1px solid #1B234E;
+  margin-top: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: rgb(240, 239, 239);
+}
+
+.answerBtn {
+  position: relative;
+  padding: 10px;
+  background-color: #2F375E;
+  display: inline-block;
+  margin: 10px;
+  outline: none;
+  border: none;
+  font-size: 0.8em;
+  color: #E8E8E8;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.score-board {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.score {
+  width: 400px;
+  font-size: 3em;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.playBtn {
+  font-size: 1.4em;
+  padding: 10px;
+  background-color: rgb(46, 182, 46);
+  color: rgb(255, 255, 255);
+  width: 180px;
+  margin: 10px auto;
+  outline: none;
+  cursor: pointer;
+}
+
+@media(max-width: 820px){
+  .container {
+    width: 600px;
+  }
+}
+@media(max-width: 620px){
+  .container {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .question {
+    font-size: 1em;
+  }
+  .questionBox {
+    margin-top: 10px;
+    padding: 5px 10px;
+  }
+  .score {
+    font-size: 2em;
+  }
+  
+}
+@media(max-width: 520px){
+
+  .answerBtn {
+    margin: 5px;
+  }
+  .score {
+    width: 200px;
+    font-size: 1.2em;
+  }
+  
+}
